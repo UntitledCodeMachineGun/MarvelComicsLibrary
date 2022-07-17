@@ -1,0 +1,25 @@
+{
+  "name": "marvelcomicslibrary",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel public/index.html --open",
+    "build": "parcel build public/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UntitledCodeMachineGun/MarvelComicsLibrary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UntitledCodeMachineGun/MarvelComicsLibrary/issues"
+  },
+  "homepage": "https://github.com/UntitledCodeMachineGun/MarvelComicsLibrary#readme",
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
