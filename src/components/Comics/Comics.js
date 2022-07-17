@@ -2,8 +2,7 @@ import { API_URL, URL_COMICS, URL_CHARACTERS, IMG_STANDART_XLARGE, IMG_NOT_AVAIL
 import { getDataApi } from '../../utils/GetDataApi';
 import { ROOT_INDEX } from '../../constants/root';
 
-import './Comics.css';
-
+import classes from './Comics.css';
 
 class Comics
 {
@@ -22,9 +21,9 @@ class Comics
 
           htmlContent += 
           `
-            <li class="comics-item" data-uri="${uri}">
-              <span class="comics-name">${title}</span>
-              <img class="comics-img" src="${imgSrc}"/>
+            <li class="comics__item ${classes.comics__item}" data-uri="${uri}">
+              <span class="${classes.comics__name}">${title}</span>
+              <img class="img-contain ${classes.comics__img}" src="${imgSrc}"/>
             </li>
           `;
         }
@@ -32,7 +31,7 @@ class Comics
 
       const htmlWrapper = 
       `
-        <ul class="comics-container">
+        <ul class="${classes.comics__container}">
           ${htmlContent}
         </ul>
       `;
@@ -41,7 +40,7 @@ class Comics
 
   eventListener()
   {
-    document.querySelectorAll('.comics-item').forEach(element => 
+    document.querySelectorAll('.comics__item').forEach(element => 
       {
         const uri = element.getAttribute('data-uri');
 

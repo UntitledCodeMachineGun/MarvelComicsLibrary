@@ -1,9 +1,9 @@
-.comics-container{
+.comics__container{
   display: flex;
   flex-wrap: wrap;
 }
 
-.comics-item{
+.comics__item{
   background-color: var(--color-light);
   width: 250px;
   margin: var(--spacing-large);
@@ -15,17 +15,17 @@
   transition: 0.5s;
   cursor: pointer;
 }
-.comics-item:hover{
+.comics__item:hover{
   transform: rotate(-3deg) scale(0.95);
   filter: saturate(150%);
 }
 
-.comics-name{
+.comics__name{
   display: flex;
   margin: auto;
   padding: var(--spacing-small) var(--spacing-medium);
 }
 
-.comics-img{
+.comics__img{
   width: 100%;
 }
