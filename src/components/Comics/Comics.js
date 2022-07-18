@@ -1,8 +1,9 @@
-import { API_URL, URL_COMICS, URL_CHARACTERS, IMG_STANDART_XLARGE, IMG_NOT_AVAILABLE, URL_CHARACTERS } from '../../constants/api';
+import { API_URL, URL_COMICS, URL_CHARACTERS, IMG_PORTRAIT_UNCANNY, IMG_NOT_AVAILABLE, URL_CHARACTERS } from '../../constants/api';
 import { getDataApi } from '../../utils/GetDataApi';
 import { ROOT_INDEX } from '../../constants/root';
 
 import Error from '../Error';
+import Characters from '../Characters';
 
 import classes from './Comics.css';
 
@@ -17,7 +18,7 @@ class Comics
         if(path.lastIndexOf(IMG_NOT_AVAILABLE) === -1)
         {
           const uri = API_URL + URL_COMICS + '/' + id + '/' + URL_CHARACTERS;
-          const imgSrc = path + '/' + IMG_STANDART_XLARGE + '.' + extension;
+          const imgSrc = path + '/' + IMG_PORTRAIT_UNCANNY + '.' + extension;
 
           htmlContent += 
           `
@@ -54,7 +55,7 @@ class Comics
 
         element.addEventListener('click', () =>
         {
-          console.log(uri);
+          Characters.render(uri);
         });
       });
   }
