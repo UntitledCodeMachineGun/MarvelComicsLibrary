@@ -1,5 +1,4 @@
 import Comics from '../Comics/Comics.js';
-import './App.css';
 
 class App
 {
