@@ -1,4 +1,5 @@
 import 'regenerator-runtime/runtime';
+import 'core-js/stable';
 
 import App from './components/App';
 import Comics from './components/Comics';
