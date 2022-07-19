@@ -1,5 +1,5 @@
-import App from './components/App';
-import Comics from './components/Comics';
+import App from 'src/components/App';
+import Comics from 'src/components/Comics';
 
 (async () =>
 {
