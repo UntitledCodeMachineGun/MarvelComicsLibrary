@@ -1,4 +1,4 @@
-import 'regenerator-runtime/runtime';
+import 'regenerator-runtime';
 import 'core-js/stable';
 
 import App from './components/App';
